@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator grafu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="left-menu">
+        <h1>Generator grafu</h1>
+        <label for="vertices">Liczba wierzchołków:</label>
+        <input type="text" id="vertices" placeholder="Liczba wierzchołków">
+        <label for="probability">Szansa na krawędź (0-1):</label>
+        <input type="text" id="probability" placeholder="Szansa na krawędź">
+        <label for="degree">Stopień wierzchołka:</label>
+        <input type="text" id="degree" placeholder="Stopień wierzchołka">
+        <button onclick="generateGraph()">Generuj graf</button>
+
+    </div>
+
+    <div class="right-panel">
+        <div id="mynetwork">
+
+
+        </div>
+        <div id="results">
+            <h2>Wyniki:</h2>
+            <div id="adjacencyMatrix"></div>
+            <div id="degreeSequence"></div>
+            <div id="edgeSet"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
