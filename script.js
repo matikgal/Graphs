@@ -18,6 +18,7 @@ function generateGraph() {
 	edges.push({ from: 0, to: 1 })
 	vertexDegree[0]++
 	vertexDegree[1]++
+	//siema
 
 	// Faza 2: Dalsze krawędzie
 	for (var i = 2; i < vertices - 1; i++) {
